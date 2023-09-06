@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardView"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_7sdp"
+    android:layout_margin="@dimen/_7sdp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#219BCC"
+    android:orientation="horizontal"
+    >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_15sdp"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_girl_git"
+            android:layout_gravity="start"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUserId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text 1"
+                android:fontFamily="@font/raleway_bold"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/white"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/tvPostId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text 2"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/tvPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/white"
+                android:text="Text 3"
+                android:textSize="@dimen/_16ssp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:id="@+id/tvPostBody"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Text 4"
+                android:maxLength="25"
+
+                android:textSize="@dimen/_16ssp"
+                android:layout_gravity="start"/>
+        </LinearLayout>
+    </LinearLayout>
+
+  
+</androidx.cardview.widget.CardView>
